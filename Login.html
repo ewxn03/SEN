@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">Login Page</header>
+    <div class="formcont">
+      <label for="username" class="label">Username</label>
+      <input type="text" id="username" name="username" class="login" />
+
+      <label for="password" class="label">Password</label>
+      <input type="password" id="password" name="password" class="password" />
+
+      <button type="button" class="btn" onclick="login()">Login</button>
+      <button type="button" class="btn" onclick="register()">Register</button>
+    </div>
+
+    <script>
+      function login() {
+        let login = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        //console.log("Login Function:");
+        console.log("Username:", login);
+        console.log("Password:", password);
+      }
+
+      function register() {
+        let login = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        //console.log("Register Function:");
+        console.log("Username:", login);
+        console.log("Password:", password);
+      }
+    </script>
+  </body>
+</html>

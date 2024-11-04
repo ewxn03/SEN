@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Desk</title>
+    <link rel="stylesheet" href="servicedesk.css" />
+  </head>
+  <body>
+    <header class="header">Service Desk</header>
+    <div class="service-desk">
+      <button class="btn">Dashboard</button>
+
+      <div class="form-group">
+        <button class="btn">Start Call</button>
+      </div>
+
+      <div class="form-group">
+        <label for="client-id" class="label">Client ID</label>
+        <input type="text" id="client-id" name="client-id" class="input-text" />
+      </div>
+
+      <div class="form-group">
+        <label for="fault-issues" class="label">Fault/Issues</label>
+        <textarea
+          id="fault-issues"
+          name="fault-issues"
+          class="textarea"
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="priority-level" class="label">Priority level</label>
+        <select id="priority-level" name="priority-level" class="select">
+          <option>Low</option>
+          <option>Medium</option>
+          <option>High</option>
+        </select>
+
+        <label for="type" class="label">Type</label>
+        <select id="type" name="type" class="select">
+          <option>Technical</option>
+          <option>Billing</option>
+          <option>General</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="assign-work-request" class="label"
+          >Assign work request</label
+        >
+        <input
+          type="checkbox"
+          id="assign-work-request"
+          name="assign-work-request"
+          class="checkbox"
+        />
+      </div>
+
+      <div class="form-group">
+        <button class="btn">End Call</button>
+      </div>
+    </div>
+  </body>
+</html>
